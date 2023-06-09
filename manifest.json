@@ -1,0 +1,63 @@
+{
+  "name": "Cin7",
+  "author": {
+    "name": "Matthew de Noronha",
+    "email": "matt@windowcleaningwarehouse.co.uk",
+    "url": "https://www.windowcleaningwarehouse.co.uk"
+  },
+  "installation_instructions": "The app will require a Cin7 API (accessible from the Integrations & API section in settings). As well as a idWebSite and idCustomerAppsLink (accessible from the URL when logged into Cin7's CRM section).",
+  "screenshots": [
+    "assets/screenshot-1.png",
+    "assets/screenshot-2.png",
+    "assets/screenshot-3.png"
+  ],
+  "domainWhitelist": [ "api.cin7.com" ],
+  "parameters": [
+    {
+      "name": "apiToken",
+      "type": "text",
+      "secure": true
+    },
+    {
+      "name": "idWebSite",
+      "type": "text"
+    },
+    {
+      "name": "idCustomerAppsLink",
+      "type": "text"
+    },
+    {
+      "name": "currencyCode",
+      "type": "text",
+      "default": "$"
+    }
+  ],
+  "defaultLocale": "en",
+  "private": false,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      },
+      "new_ticket_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      },
+      "ticket_editor": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      },
+      "user_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      },
+      "organization_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      }
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}
